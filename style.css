@@ -1,0 +1,96 @@
+body {
+  background: #ffffe5;
+  font-family: poppins;
+}
+
+input[type=number] {
+  width: 100px;
+  border: solid 1px #c77802;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  left: 0;
+  height: 60px;
+  display: flex;
+  padding: 0 80px;
+}
+nav > * {
+  margin: auto 30px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 15px;
+  display: flex;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+nav ul li svg {
+  height: 1em;
+  margin: auto;
+  margin-right: 5px;
+}
+nav ul li:hover {
+  background: rgba(255, 196, 0, 0.103);
+}
+nav ul li.Act {
+  background: #ffc400;
+}
+
+button {
+  display: flex;
+  border: none;
+  font-size: 18px;
+  padding: 5px 15px;
+  background: #8a1d02;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+button svg {
+  width: 1em;
+  fill: white;
+  height: 1em;
+  margin: auto;
+  margin-right: 5px;
+}
+button:hover {
+  transition: 0.5s;
+  background: #aa2503;
+  box-shadow: rgba(255, 0, 0, 0.541) 0px 0 10px 0px;
+}
+
+.Cirfs {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.Cirfs button {
+  height: 30px;
+  border-radius: 5px;
+  width: 30px;
+  background: white;
+  display: grid;
+  place-content: center;
+}
+.Cirfs button svg {
+  fill: #c35757;
+  margin: auto;
+}
+.Cirfs a {
+  text-decoration: none;
+}
+.Cirfs > div {
+  margin: auto;
+}
+.Cirfs > div > div {
+  margin-top: 30px;
+}
