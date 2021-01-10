@@ -10,6 +10,36 @@ input[type=number] {
   border-radius: 5px;
 }
 
+.LoadAnim {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: white;
+  margin: 0;
+  display: flex;
+}
+.LoadAnim > div {
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  color: #d1820a;
+}
+.LoadAnim > div img {
+  height: 200px;
+  animation: imgch 1s infinite cubic-bezier(0.99, -0.02, 0.53, 0.32);
+}
+
+@keyframes imgch {
+  0% {
+    filter: blur(0) brightness(1);
+  }
+  100% {
+    filter: blur(100px) brightness(15);
+  }
+}
 nav {
   position: fixed;
   top: 0;
@@ -18,7 +48,6 @@ nav {
   left: 0;
   height: 60px;
   display: flex;
-  padding: 0 80px;
 }
 nav > * {
   margin: auto 30px;
@@ -68,6 +97,9 @@ button:hover {
 }
 
 .Cirfs {
+  overflow: auto;
+  width: 100%;
+  height: calc(100vh - 80px);
   margin-top: 70px;
   width: 100%;
   display: flex;
