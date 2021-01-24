@@ -46,11 +46,18 @@ nav {
   background: white;
   width: 100%;
   left: 0;
-  height: 60px;
+  height: max-content;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  nav {
+    justify-content: center;
+  }
 }
 nav > * {
-  margin: auto 30px;
+  margin: 10px 30px;
 }
 nav ul {
   display: flex;
@@ -125,6 +132,9 @@ button:hover {
 }
 .Cirfs > div > div {
   margin-top: 30px;
+  overflow: auto;
+  width: 900px;
+  height: 630px;
 }
 
 .LinkProv {
@@ -137,9 +147,11 @@ button:hover {
   margin: auto;
   display: flex;
   flex-direction: column;
+  width: 60%;
 }
 .LinkProv img {
-  width: 220px;
+  width: 70%;
+  max-width: 250px;
   margin: 20px auto;
   mix-blend-mode: darken;
 }
@@ -147,7 +159,11 @@ button:hover {
   border: none;
   font-size: 25px;
   padding: 8px 18px;
+  width: 70%;
+  max-width: 250px;
+  margin: auto;
   outline: none;
+  box-shadow: #6d59012c 0px 0px 5px 5px;
   margin-bottom: 10px;
 }
 .LinkProv ._link {
